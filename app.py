@@ -13,7 +13,7 @@ def index():
 
 @app.route("/api/predict", methods=['POST'])
 def predict():
-    model = keras.models.load_model('multi.h5')
+    model = keras.models.load_model('multi2.h5')
     # model = keras.models.load_model('bin.h5')
     img = Image.open(request.files['name'])
     
